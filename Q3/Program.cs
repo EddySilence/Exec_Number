@@ -17,6 +17,7 @@ namespace Q3
 				   這個四位數值, 剛好也是某整數的平方
 				   請問這個四位數值是什麼?*/
 			Console.WriteLine("測試");
+			Console.WriteLine("測試2");
 
 
 
