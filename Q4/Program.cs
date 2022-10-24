@@ -22,17 +22,24 @@ namespace Q4
             {
                 for (int k = 0; k <= 33; k++)
                 {
-                    for (int j = 0; j <= 99; j += 3)
+                    chicken = 100 - i - k;
+                    allChicken = i + k + chicken;
+                    if (chicken % 3 != 0)
                     {
-                        allChicken = i + k + j;
-                        money = i * 5 + k * 3 + j/3;
-                        if(money == 100 && allChicken == 100)
-                        {
-                            Console.WriteLine($"母雞{i}隻公雞{k}隻小雞{j}隻");
-                        }
+                        continue;
+                    }
+                    money = i * 5 + k * 3 + chicken / 3;
+                    if (money == 100 && allChicken == 100)
+                    {
+                        Console.WriteLine($"母雞 {i} 隻公雞 {k} 隻小雞 {chicken} 隻");
                     }
                 }
             }
+
+            //母雞0隻公雞25隻小雞75隻
+            //母雞4隻公雞18隻小雞78隻
+            //母雞8隻公雞11隻小雞81隻
+            //母雞12隻公雞4隻小雞84隻
 
         }
     }
